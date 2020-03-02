@@ -1,0 +1,84 @@
+
+@font-face {
+	font-family: 'WorkSans-Black';
+	src: url(../fonts/WorkSans-Black.ttf);
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+
+
+}
+.cover {
+	position: relative;
+	width: 400px;
+	height: 600px;
+	background: #1E1E1E;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+   
+}
+
+
+.container {
+	width: 400px;
+	height: 600px;
+    position: relative;
+    top:0px;
+    left: 0px;
+    line-height: 120px
+
+}
+
+.me {
+	position: relative;
+	font-family: 'WorkSans-Black', sans-serif;
+	font-size: 10em;
+	color: #EE3160;
+    animation: me_move 3s forwards infinite;
+
+}
+
+@keyframes me_move {
+	0%{top: 0px; right: 0px}
+	25%{top: -40px; right: -40px}
+	50%{top: -60px; right: 0px}
+    100%{top: 0px; right: 0px}
+}
+
+
+.gg {
+	position: relative;
+	font-family: 'WorkSans-Black', sans-serif;
+	font-size: 10em;
+	color: #EE3160;
+
+}
+
+.gg:hover{
+	filter: blur(5px);
+	transition: filter 0.1s
+}
+
+.s {
+	position: relative;
+	font-family: 'WorkSans-Black', sans-serif;
+	font-size: 10em;
+	color: #EE3160;
+	transform-origin: 0% 0%;
+	animation: rotate 2s infinite;
+	
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
